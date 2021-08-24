@@ -1,15 +1,15 @@
 < test(1) >
 ------ INPUT START ------
-10 1 6 1
+9 8 5 9
 
 ------ INPUT END --------
 ------ ANSWER START -----
-47
+94
 
 ------ ANSWER END -------
 < test(2) >
 ------ INPUT START ------
-5 5 3 10
+8 2 9 4
 
 ------ INPUT END --------
 ------ ANSWER START -----
@@ -18,433 +18,433 @@
 ------ ANSWER END -------
 < test(3) >
 ------ INPUT START ------
-5 4 6 8
+0 3 5 2
 
 ------ INPUT END --------
 ------ ANSWER START -----
-79
+42
 
 ------ ANSWER END -------
 < test(4) >
 ------ INPUT START ------
-9 4 7 2
+1 8 0 6
 
 ------ INPUT END --------
 ------ ANSWER START -----
-64
+49
 
 ------ ANSWER END -------
 < test(5) >
 ------ INPUT START ------
-3 6 9 3
+2 1 2 6
 
 ------ INPUT END --------
 ------ ANSWER START -----
-78
+39
 
 ------ ANSWER END -------
 < test(6) >
 ------ INPUT START ------
-7 1 6 9
+9 9 9 9
 
 ------ INPUT END --------
 ------ ANSWER START -----
-76
+117
 
 ------ ANSWER END -------
 < test(7) >
 ------ INPUT START ------
-9 5 10 10
+3 7 8 7
 
 ------ INPUT END --------
 ------ ANSWER START -----
-114
+92
 
 ------ ANSWER END -------
 < test(8) >
 ------ INPUT START ------
-1 8 9 8
+6 2 3 1
 
 ------ INPUT END --------
 ------ ANSWER START -----
-102
+31
 
 ------ ANSWER END -------
 < test(9) >
 ------ INPUT START ------
-2 2 6 2
+4 6 5 4
 
 ------ INPUT END --------
 ------ ANSWER START -----
-46
+63
 
 ------ ANSWER END -------
 < test(10) >
 ------ INPUT START ------
-6 10 5 5
+2 9 2 4
 
 ------ INPUT END --------
 ------ ANSWER START -----
-81
+55
 
 ------ ANSWER END -------
 < test(11) >
 ------ INPUT START ------
-3 5 4 1
+4 8 1 2
 
 ------ INPUT END --------
 ------ ANSWER START -----
-42
+41
 
 ------ ANSWER END -------
 < test(12) >
 ------ INPUT START ------
-4 8 2 2
+9 8 8 6
 
 ------ INPUT END --------
 ------ ANSWER START -----
-46
+97
 
 ------ ANSWER END -------
 < test(13) >
 ------ INPUT START ------
-1 2 8 1
-
------- INPUT END --------
------- ANSWER START -----
-51
-
------- ANSWER END -------
-< test(14) >
------- INPUT START ------
-9 10 6 4
-
------- INPUT END --------
------- ANSWER START -----
-85
-
------- ANSWER END -------
-< test(15) >
------- INPUT START ------
-7 3 2 2
-
------- INPUT END --------
------- ANSWER START -----
-34
-
------- ANSWER END -------
-< test(16) >
------- INPUT START ------
-8 8 6 6
-
------- INPUT END --------
------- ANSWER START -----
-86
-
------- ANSWER END -------
-< test(17) >
------- INPUT START ------
-9 9 5 7
-
------- INPUT END --------
------- ANSWER START -----
-89
-
------- ANSWER END -------
-< test(18) >
------- INPUT START ------
-9 3 8 6
-
------- INPUT END --------
------- ANSWER START -----
-82
-
------- ANSWER END -------
-< test(19) >
------- INPUT START ------
-6 2 2 1
-
------- INPUT END --------
------- ANSWER START -----
-26
-
------- ANSWER END -------
-< test(20) >
------- INPUT START ------
-2 6 3 10
-
------- INPUT END --------
------- ANSWER START -----
-75
-
------- ANSWER END -------
-< test(21) >
------- INPUT START ------
-2 9 3 5
-
------- INPUT END --------
------- ANSWER START -----
-64
-
------- ANSWER END -------
-< test(22) >
------- INPUT START ------
-7 9 8 8
-
------- INPUT END --------
------- ANSWER START -----
-106
-
------- ANSWER END -------
-< test(23) >
------- INPUT START ------
-5 9 9 6
-
------- INPUT END --------
------- ANSWER START -----
-101
-
------- ANSWER END -------
-< test(24) >
------- INPUT START ------
-2 2 5 6
-
------- INPUT END --------
------- ANSWER START -----
-57
-
------- ANSWER END -------
-< test(25) >
------- INPUT START ------
-7 8 7 10
-
------- INPUT END --------
------- ANSWER START -----
-106
-
------- ANSWER END -------
-< test(26) >
------- INPUT START ------
-2 5 2 9
-
------- INPUT END --------
------- ANSWER START -----
-63
-
------- ANSWER END -------
-< test(27) >
------- INPUT START ------
-9 7 5 4
-
------- INPUT END --------
------- ANSWER START -----
-71
-
------- ANSWER END -------
-< test(28) >
------- INPUT START ------
-1 5 7 7
-
------- INPUT END --------
------- ANSWER START -----
-79
-
------- ANSWER END -------
-< test(29) >
------- INPUT START ------
-4 6 1 2
-
------- INPUT END --------
------- ANSWER START -----
-35
-
------- ANSWER END -------
-< test(30) >
------- INPUT START ------
-7 3 4 10
-
------- INPUT END --------
------- ANSWER START -----
-76
-
------- ANSWER END -------
-< test(31) >
------- INPUT START ------
-2 10 7 3
-
------- INPUT END --------
------- ANSWER START -----
-79
-
------- ANSWER END -------
-< test(32) >
------- INPUT START ------
-7 9 4 10
-
------- INPUT END --------
------- ANSWER START -----
-94
-
------- ANSWER END -------
-< test(33) >
------- INPUT START ------
-6 3 5 6
-
------- INPUT END --------
------- ANSWER START -----
-64
-
------- ANSWER END -------
-< test(34) >
------- INPUT START ------
-5 9 3 6
-
------- INPUT END --------
------- ANSWER START -----
-71
-
------- ANSWER END -------
-< test(35) >
------- INPUT START ------
-6 2 8 2
-
------- INPUT END --------
------- ANSWER START -----
-60
-
------- ANSWER END -------
-< test(36) >
------- INPUT START ------
-4 4 6 2
-
------- INPUT END --------
------- ANSWER START -----
-54
-
------- ANSWER END -------
-< test(37) >
------- INPUT START ------
-10 3 1 5
-
------- INPUT END --------
------- ANSWER START -----
-44
-
------- ANSWER END -------
-< test(38) >
------- INPUT START ------
-3 10 2 5
-
------- INPUT END --------
------- ANSWER START -----
-63
-
------- ANSWER END -------
-< test(39) >
------- INPUT START ------
-10 6 7 3
-
------- INPUT END --------
------- ANSWER START -----
-75
-
------- ANSWER END -------
-< test(40) >
------- INPUT START ------
-4 2 7 2
-
------- INPUT END --------
------- ANSWER START -----
-53
-
------- ANSWER END -------
-< test(41) >
------- INPUT START ------
-2 4 4 7
-
------- INPUT END --------
------- ANSWER START -----
-62
-
------- ANSWER END -------
-< test(42) >
------- INPUT START ------
-6 2 2 5
-
------- INPUT END --------
------- ANSWER START -----
-42
-
------- ANSWER END -------
-< test(43) >
------- INPUT START ------
-5 6 5 4
-
------- INPUT END --------
------- ANSWER START -----
-64
-
------- ANSWER END -------
-< test(44) >
------- INPUT START ------
-3 4 4 6
-
------- INPUT END --------
------- ANSWER START -----
-59
-
------- ANSWER END -------
-< test(45) >
------- INPUT START ------
-9 7 1 8
-
------- INPUT END --------
------- ANSWER START -----
-67
-
------- ANSWER END -------
-< test(46) >
------- INPUT START ------
-3 2 8 7
-
------- INPUT END --------
------- ANSWER START -----
-77
-
------- ANSWER END -------
-< test(47) >
------- INPUT START ------
-10 8 2 10
-
------- INPUT END --------
------- ANSWER START -----
-84
-
------- ANSWER END -------
-< test(48) >
------- INPUT START ------
-6 8 8 1
+4 4 6 7
 
 ------ INPUT END --------
 ------ ANSWER START -----
 74
 
 ------ ANSWER END -------
-< test(49) >
+< test(14) >
 ------ INPUT START ------
-6 9 1 3
+8 8 4 2
+
+------ INPUT END --------
+------ ANSWER START -----
+60
+
+------ ANSWER END -------
+< test(15) >
+------ INPUT START ------
+7 9 2 1
+
+------ INPUT END --------
+------ ANSWER START -----
+48
+
+------ ANSWER END -------
+< test(16) >
+------ INPUT START ------
+3 3 6 2
 
 ------ INPUT END --------
 ------ ANSWER START -----
 50
 
 ------ ANSWER END -------
-< test(50) >
+< test(17) >
 ------ INPUT START ------
-6 10 9 7
+2 6 8 9
 
 ------ INPUT END --------
 ------ ANSWER START -----
-109
+96
+
+------ ANSWER END -------
+< test(18) >
+------ INPUT START ------
+0 2 7 8
+
+------ INPUT END --------
+------ ANSWER START -----
+73
+
+------ ANSWER END -------
+< test(19) >
+------ INPUT START ------
+1 9 8 8
+
+------ INPUT END --------
+------ ANSWER START -----
+100
+
+------ ANSWER END -------
+< test(20) >
+------ INPUT START ------
+6 9 8 5
+
+------ INPUT END --------
+------ ANSWER START -----
+93
+
+------ ANSWER END -------
+< test(21) >
+------ INPUT START ------
+9 6 9 5
+
+------ INPUT END --------
+------ ANSWER START -----
+92
+
+------ ANSWER END -------
+< test(22) >
+------ INPUT START ------
+4 2 6 6
+
+------ INPUT END --------
+------ ANSWER START -----
+64
+
+------ ANSWER END -------
+< test(23) >
+------ INPUT START ------
+7 0 4 3
+
+------ INPUT END --------
+------ ANSWER START -----
+39
+
+------ ANSWER END -------
+< test(24) >
+------ INPUT START ------
+2 2 8 6
+
+------ INPUT END --------
+------ ANSWER START -----
+72
+
+------ ANSWER END -------
+< test(25) >
+------ INPUT START ------
+8 7 2 7
+
+------ INPUT END --------
+------ ANSWER START -----
+67
+
+------ ANSWER END -------
+< test(26) >
+------ INPUT START ------
+9 1 0 7
+
+------ INPUT END --------
+------ ANSWER START -----
+40
+
+------ ANSWER END -------
+< test(27) >
+------ INPUT START ------
+1 3 1 6
+
+------ INPUT END --------
+------ ANSWER START -----
+39
+
+------ ANSWER END -------
+< test(28) >
+------ INPUT START ------
+4 7 9 0
+
+------ INPUT END --------
+------ ANSWER START -----
+70
+
+------ ANSWER END -------
+< test(29) >
+------ INPUT START ------
+6 8 3 2
+
+------ INPUT END --------
+------ ANSWER START -----
+53
+
+------ ANSWER END -------
+< test(30) >
+------ INPUT START ------
+9 8 7 5
+
+------ INPUT END --------
+------ ANSWER START -----
+88
+
+------ ANSWER END -------
+< test(31) >
+------ INPUT START ------
+1 0 1 8
+
+------ INPUT END --------
+------ ANSWER START -----
+38
+
+------ ANSWER END -------
+< test(32) >
+------ INPUT START ------
+3 1 4 3
+
+------ INPUT END --------
+------ ANSWER START -----
+38
+
+------ ANSWER END -------
+< test(33) >
+------ INPUT START ------
+9 5 0 8
+
+------ INPUT END --------
+------ ANSWER START -----
+56
+
+------ ANSWER END -------
+< test(34) >
+------ INPUT START ------
+1 4 9 3
+
+------ INPUT END --------
+------ ANSWER START -----
+70
+
+------ ANSWER END -------
+< test(35) >
+------ INPUT START ------
+3 4 3 7
+
+------ INPUT END --------
+------ ANSWER START -----
+58
+
+------ ANSWER END -------
+< test(36) >
+------ INPUT START ------
+4 1 0 2
+
+------ INPUT END --------
+------ ANSWER START -----
+15
+
+------ ANSWER END -------
+< test(37) >
+------ INPUT START ------
+5 8 8 8
+
+------ INPUT END --------
+------ ANSWER START -----
+101
+
+------ ANSWER END -------
+< test(38) >
+------ INPUT START ------
+2 0 5 5
+
+------ INPUT END --------
+------ ANSWER START -----
+47
+
+------ ANSWER END -------
+< test(39) >
+------ INPUT START ------
+5 0 8 2
+
+------ INPUT END --------
+------ ANSWER START -----
+53
+
+------ ANSWER END -------
+< test(40) >
+------ INPUT START ------
+7 4 7 6
+
+------ INPUT END --------
+------ ANSWER START -----
+78
+
+------ ANSWER END -------
+< test(41) >
+------ INPUT START ------
+4 6 2 1
+
+------ INPUT END --------
+------ ANSWER START -----
+36
+
+------ ANSWER END -------
+< test(42) >
+------ INPUT START ------
+8 7 2 0
+
+------ INPUT END --------
+------ ANSWER START -----
+39
+
+------ ANSWER END -------
+< test(43) >
+------ INPUT START ------
+1 4 8 5
+
+------ INPUT END --------
+------ ANSWER START -----
+73
+
+------ ANSWER END -------
+< test(44) >
+------ INPUT START ------
+2 1 3 3
+
+------ INPUT END --------
+------ ANSWER START -----
+32
+
+------ ANSWER END -------
+< test(45) >
+------ INPUT START ------
+1 7 5 1
+
+------ INPUT END --------
+------ ANSWER START -----
+51
+
+------ ANSWER END -------
+< test(46) >
+------ INPUT START ------
+0 5 1 8
+
+------ INPUT END --------
+------ ANSWER START -----
+52
+
+------ ANSWER END -------
+< test(47) >
+------ INPUT START ------
+2 2 4 7
+
+------ INPUT END --------
+------ ANSWER START -----
+56
+
+------ ANSWER END -------
+< test(48) >
+------ INPUT START ------
+2 8 5 5
+
+------ INPUT END --------
+------ ANSWER START -----
+71
+
+------ ANSWER END -------
+< test(49) >
+------ INPUT START ------
+9 2 9 7
+
+------ INPUT END --------
+------ ANSWER START -----
+88
+
+------ ANSWER END -------
+< test(50) >
+------ INPUT START ------
+3 1 4 0
+
+------ INPUT END --------
+------ ANSWER START -----
+26
 
 ------ ANSWER END -------
