@@ -1,4 +1,3 @@
-/Users/judau/CLionProjects/Playground/cmake-build-debug/Playground
 < test(1) >
 ------ INPUT START ------
 793
@@ -26130,5 +26129,3 @@
 537200
 
 ------ ANSWER END -------
-
-Process finished with exit code 0
