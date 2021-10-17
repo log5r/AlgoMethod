@@ -16,15 +16,6 @@ class BinaryHeapTree: CustomStringConvertible {
         upHeap(to: array.count - 1)
     }
 
-    // for algo-524
-    func sort(task:(Int, [Int]) -> ()) {
-        for i in stride(from: array.count - 1, through: 0, by: -1) {
-            array.swapAt(0, i)
-            downHeap(to: i)
-            task(i, array)
-        }
-    }
-
     func sort() {
         for i in stride(from: array.count - 1, through: 0, by: -1) {
             array.swapAt(0, i)
