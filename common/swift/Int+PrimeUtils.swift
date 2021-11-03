@@ -12,3 +12,11 @@ extension Int {
         }
     }
 }
+
+
+// functions depends on ext
+
+func primes(upTo max: Int) -> [Int] {
+    guard max >= 2 else { return [] }
+    return [2] + stride(from: 3, through: max, by: 2).filter({ $0.isPrime() })
+}
