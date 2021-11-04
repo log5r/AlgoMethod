@@ -19,3 +19,19 @@ func isPrime(_ n: Int) -> Bool {
         return n % 2 != 0 && !stride(from: 3, through: Int(sqrt(Double(n))), by: 2).contains { n % $0 == 0 }
     }
 }
+
+func primeDecomposition<T: BinaryInteger>(of n: T) -> [T] {
+    guard n > 1 else { return [] }
+    guard n > 2 else { return [2] }
+    let uq = T(Double(n).squareRoot())
+    var d: T = 1
+    var q: T = n % 2 == 0 ? 2 : 3
+    func step(_ x: T) -> T {
+        1 + (x << 2) - ((x >> 1) << 1)
+    }
+    while q <= uq && n % q != 0 {
+        q = step(d)
+        d += 1
+    }
+    return q <= uq ? [q] + primeDecomposition(of: n / q) : [n]
+}
