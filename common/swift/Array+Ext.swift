@@ -18,3 +18,11 @@ extension Array where Element: Comparable {
         return left
     }
 }
+
+extension Array where Element: Hashable {
+    func groupByCount() -> [Element: Int] {
+        var res: [Element: Int] = [:]
+        for item in self { res[item, default: 0] += 1 }
+        return res
+    }
+}
