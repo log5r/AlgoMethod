@@ -24,7 +24,7 @@ func isPrime(_ n: Int) -> Bool {
 
 func divisor(of n: Int) -> [Int] {
     var res: [Int] = []
-    for i in 1..<(Int(Double(self).squareRoot()) + 1) where n % i == 0 {
+    for i in 1..<(Int(Double(n).squareRoot()) + 1) where n % i == 0 {
         res.append(i)
         if i * i != n { res.append(n / i) }
     }
