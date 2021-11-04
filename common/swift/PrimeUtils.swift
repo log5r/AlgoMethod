@@ -1,5 +1,7 @@
 import Foundation
 
+// <T: BinaryInteger> はめんどくさくてやってない...
+
 func gcd(_ a: Int, _ b: Int) -> Int {
     guard a != 0 else { return b }
     return gcd(b % a, a)
@@ -20,6 +22,15 @@ func isPrime(_ n: Int) -> Bool {
     }
 }
 
+func divisor(of n: Int) -> [Int] {
+    var res: [Int] = []
+    for i in 1..<(n.sqrtFloor() + 1) where n % i == 0 {
+        res.append(i)
+        if i * i != n { res.append(n / i) }
+    }
+    return res
+}
+
 func primeDecomposition<T: BinaryInteger>(of n: T) -> [T] {
     guard n > 1 else { return [] }
     guard n > 2 else { return [2] }
@@ -35,3 +46,4 @@ func primeDecomposition<T: BinaryInteger>(of n: T) -> [T] {
     }
     return q <= uq ? [q] + primeDecomposition(of: n / q) : [n]
 }
+
