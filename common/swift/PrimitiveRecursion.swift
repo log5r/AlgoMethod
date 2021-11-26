@@ -1,22 +1,26 @@
-/// 原始再帰っぽい再帰が出来る関数（のつもり）
-///
-/// - Parameters:
-///   - array: 処理対象の配列
-///   - regressive: 後退項(Regressive argument)
-///   - base: 基底関数を入れるところ
-///   - step: 再帰ステップ関数を入れるための再帰項
-/// - Returns: 答え
-func primitiveRecursion(
-        array: [Int],
-        regressive: UInt,
-        base: ([Int]) -> Int,
-        step: @escaping ([Int], UInt, ([Int], UInt) -> Int) -> Int
-) -> Int {
-    if regressive == 0 {
-        return base(array)
-    } else {
-        return step(array, regressive - 1) { arr, reg in
-            primitiveRecursion(array: arr, regressive: reg, base: base, step: step)
+class PrimitiveRecursion<T: Hashable, U> {
+    struct MemoIndex<T: Hashable>: Hashable {
+        static func ==(lhs: MemoIndex<T>, rhs: MemoIndex<T>) -> Bool {
+            lhs.arr == rhs.arr && lhs.idx == rhs.idx
         }
+        var arr: [T]
+        var idx: UInt
+        init(a: [T], i: UInt) {
+            arr = a
+            idx = i
+        }
+    }
+
+    var memo: [MemoIndex<T>: U]
+    init() { memo = [:] }
+    func calc(array: [T], regressive: UInt, base: ([T]) -> U, step: @escaping ([T], UInt, ([T], UInt) -> U) -> U) -> U {
+        if let rv = memo[MemoIndex(a: array, i: regressive)] { return rv }
+        let res = regressive == 0 ?
+                base(array) :
+                step(array, regressive) { arr, reg in
+                    calc(array: arr, regressive: reg, base: base, step: step)
+                }
+        memo[MemoIndex(a: array, i: regressive)] = res
+        return res
     }
 }
