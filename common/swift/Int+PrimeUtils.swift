@@ -1,18 +1,16 @@
-import Foundation
-
 extension Int {
     func isPrime() -> Bool {
-        switch self {
-        case let x where x < 2:
-            return false
-        case 2:
-            return true
-        default:
-            return self % 2 != 0 && !stride(from: 3, through: Int(sqrt(Double(self))), by: 2).contains { self % $0 == 0 }
+        guard self != 2 else { return true }
+        guard self >= 3 else { return false }
+        guard self & 1 == 1 else { return false }
+        var i = 3
+        while i * i <= self {
+            if self % i == 0 { return false }
+            i += 2
         }
+        return true
     }
 }
-
 
 // functions depends on ext
 
