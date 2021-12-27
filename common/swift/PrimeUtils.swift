@@ -1,5 +1,7 @@
 import Foundation
 
+// Int+PrimeUtils.swift も参照
+
 // <T: BinaryInteger> はめんどくさくてやってない...
 
 func gcd(_ a: Int, _ b: Int) -> Int {
