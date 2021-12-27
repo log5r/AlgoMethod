@@ -14,14 +14,15 @@ func phi(_ n: Int) -> Int {
 }
 
 func isPrime(_ n: Int) -> Bool {
-    switch n {
-    case let x where x < 2:
-        return false
-    case 2:
-        return true
-    default:
-        return n % 2 != 0 && !stride(from: 3, through: Int(sqrt(Double(n))), by: 2).contains { n % $0 == 0 }
+    guard self != 2 else { return true }
+    guard self >= 3 else { return false }
+    guard self & 1 == 1 else { return false }
+    var i = 3
+    while i * i <= self {
+        if self.isMultiple(of: i) { return false }
+        i += 2
     }
+    return true
 }
 
 func divisor(of n: Int) -> [Int] {
