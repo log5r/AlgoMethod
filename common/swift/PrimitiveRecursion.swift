@@ -1,14 +1,8 @@
 class PrimitiveRecursion<T: Hashable, U> {
     struct MemoIndex<T: Hashable>: Hashable {
-        static func ==(lhs: MemoIndex<T>, rhs: MemoIndex<T>) -> Bool {
-            lhs.arr == rhs.arr && lhs.idx == rhs.idx
-        }
-        var arr: [T]
-        var idx: UInt
-        init(a: [T], i: UInt) {
-            arr = a
-            idx = i
-        }
+        static func ==(lhs: MemoIndex<T>, rhs: MemoIndex<T>) -> Bool { lhs.arr == rhs.arr && lhs.idx == rhs.idx }
+        var arr: [T], idx: UInt
+        init(a: [T], i: UInt) { (arr, idx) = (a ,i) }
     }
 
     var memo: [MemoIndex<T>: U]
