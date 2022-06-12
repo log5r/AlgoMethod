@@ -33,4 +33,9 @@ extension Array where Element: Hashable {
         for item in self { res[item, default: 0] += 1 }
         return res
     }
+    func reversedIndexMap() -> [Element: Int] {
+        self.enumerated().reduce(into: [Element: Int]()) { (pr: inout [Element: Int], tuple: (offset: Int, element: Element)) in
+            pr[tuple.element] = tuple.offset
+        }
+    }
 }
