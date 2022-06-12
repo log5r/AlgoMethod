@@ -1,4 +1,12 @@
 extension Array where Element: Comparable {
+    func cumulate(_ method: (Element, Element) -> Element, from start: Element) -> [Element] {
+        guard self.count > 0 else { return []}
+        var res = [Element](repeating: start, count: self.count + 1)
+        for i in 0..<self.count {
+            res[i + 1] = method(res[i], self[i])
+        }
+        return res
+    }
     func lowerBound(of item: Element) -> Index {
         var (left, right) = (0, self.count)
         while left < right {
