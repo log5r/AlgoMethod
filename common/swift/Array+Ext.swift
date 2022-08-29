@@ -1,4 +1,5 @@
 extension Array where Element: Comparable {
+
     func cumulate(_ method: (Element, Element) -> Element, from start: Element) -> [Element] {
         guard self.count > 0 else { return []}
         var res = [Element](repeating: start, count: self.count + 1)
@@ -7,6 +8,8 @@ extension Array where Element: Comparable {
         }
         return res
     }
+
+    // C++ の lower_bound のマネ
     func lowerBound(of item: Element) -> Index {
         var (left, right) = (0, self.count)
         while left < right {
@@ -16,6 +19,8 @@ extension Array where Element: Comparable {
         }
         return left
     }
+
+    // C++ の upper_bound のマネ
     func upperBound(of item: Element) -> Index {
         var (left, right) = (0, self.count)
         while left < right {
@@ -24,6 +29,13 @@ extension Array where Element: Comparable {
             else { right = mid }
         }
         return left
+    }
+
+    // n個ずつ塊でほしいとき用
+    func chunked(by chunkSize: Int) -> [[Element]] {
+        stride(from: 0, to: self.count, by: chunkSize).map { i in
+            Array(self[i..<Swift.min(i + chunkSize, self.count)])
+        }
     }
 }
 
