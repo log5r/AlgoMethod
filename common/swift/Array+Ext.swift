@@ -1,6 +1,7 @@
 extension Array where Element: Comparable {
 
-    func cumulate(_ method: (Element, Element) -> Element, from start: Element) -> [Element] {
+    // 累積和っぽいなにかを求められる何か
+    func cumulate(from start: Element, _ method: (Element, Element) -> Element) -> [Element] {
         guard self.count > 0 else { return []}
         var res = [Element](repeating: start, count: self.count + 1)
         for i in 0..<self.count {
